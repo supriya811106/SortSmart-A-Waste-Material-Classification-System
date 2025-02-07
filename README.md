@@ -1,4 +1,4 @@
-# SortSmart - A Waste Material Classifier System
+# SortSmart - A Waste Material Classification System
 
 ![SortSmart Logo](https://github.com/user-attachments/assets/ca513624-ea35-481c-b5cc-c5cfda71439d)
 
