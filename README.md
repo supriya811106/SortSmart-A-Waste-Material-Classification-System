@@ -47,8 +47,8 @@ Garbage_Classification_Project/
 ## Installation
 ### 1. Clone the Repository
 ```sh
-git clone https://github.com/supriya811106/SortSmart-A-Waste-Classifier.git
-cd SortSmart-A-Waste-Classifier
+git clone https://github.com/supriya811106/SortSmart-A-Waste-Material-Classification-System.git
+cd SortSmart-A-Waste-Material-Classification-System
 ```
 
 ### 2. Set Up a Virtual Environment (Optional but Recommended)
