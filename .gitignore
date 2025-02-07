@@ -1,6 +1,2 @@
 .vscode/
 .idea/
-
-# Ignore model and large video files
-model/*.h5
-static/videos/*.mp4
