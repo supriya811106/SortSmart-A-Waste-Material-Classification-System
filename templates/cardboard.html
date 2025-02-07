@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Waste Material</title>
+    <link rel="stylesheet" href="../static//css/style.css">
+    <script src="https://kit.fontawesome.com/2838106fa3.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        #output .image-grid img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        #output .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        a {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            font-size: 16px;
+            font-weight: bold;
+            box-shadow: 0 4px #2e7d32;
+        }
+
+        a:hover {
+            background-color: #66bb6a;
+            box-shadow: 0 2px #2e7d32;
+            transform: translateY(-2px);
+        }
+
+        a:active {
+            transform: translateY(1px);
+            box-shadow: 0 1px #2e7d32;
+        }
+
+        @keyframes pulseAnimation {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.05);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        a:focus {
+            animation: pulseAnimation 1s infinite;
+        }
+
+        @media (max-width: 600px) {
+            #output .image-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .fa-arrow-left {
+            margin-right: 5px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <section id="output" class="output">
+        <h2>Your Waste Material is Cardboard.</h2>
+        <div class="image-grid">
+            <img src="../static/images/cardboard/cardboard1.png" alt="">
+            <img src="../static/images/cardboard/cardboard2.png" alt="">
+            <img src="../static/images/cardboard/cardboard3.png" alt="">
+            <img src="../static/images/cardboard/cardboard4.png" alt="">
+        </div>
+
+        <p>
+            Cardboard waste is one of the most common types of packaging waste and can quickly pile up
+            in landfills if not disposed of properly. When left in damp conditions, it breaks down and
+            can attract pests or grow mold, contributing to environmental pollution. Although cardboard
+            is biodegradable, large amounts of waste still take up space and waste valuable resources.
+        </p>
+        <p>
+            Recycling cardboard is an easy and effective way to reduce waste.
+            It can be reused to make new packaging, saving trees and energy.
+            Proper disposal, such as flattening boxes and sending them to recycling centers,
+            helps keep the environment clean and reduces the need for cutting down more trees.
+        </p>
+        <a href="{{ url_for('home') }}"><i class="fa-solid fa-arrow-left"></i> Back To Home Page</a>
+        </div>
+    </section>
+</body>
+
+</html>

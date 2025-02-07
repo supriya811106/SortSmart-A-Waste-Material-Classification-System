@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Waste Material</title>
+    <link rel="stylesheet" href="../static//css/style.css">
+    <script src="https://kit.fontawesome.com/2838106fa3.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        #output .image-grid img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        #output .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        a {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            font-size: 16px;
+            font-weight: bold;
+            box-shadow: 0 4px #2e7d32;
+        }
+
+        a:hover {
+            background-color: #66bb6a;
+            box-shadow: 0 2px #2e7d32;
+            transform: translateY(-2px);
+        }
+
+        a:active {
+            transform: translateY(1px);
+            box-shadow: 0 1px #2e7d32;
+        }
+
+        @keyframes pulseAnimation {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.05);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        a:focus {
+            animation: pulseAnimation 1s infinite;
+        }
+
+        @media (max-width: 600px) {
+            #output .image-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .fa-arrow-left {
+            margin-right: 5px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <section id="output" class="output">
+        <h2>Your Waste Material is Paper.</h2>
+        <div class="image-grid">
+            <img src="../static/images/paper/paper1.png" alt="">
+            <img src="../static/images/paper/paper2.png" alt="">
+            <img src="../static/images/paper/paper3.png" alt="">
+            <img src="../static/images/paper/paper4.png" alt="">
+        </div>
+
+        <p>
+            Paper waste, such as newspapers, magazines, and packaging materials,
+            is one of the most common types of waste. While paper is biodegradable,
+            large amounts of discarded paper contribute to deforestation and landfill waste.
+            If not recycled, paper waste leads to the unnecessary cutting of trees and
+            increased environmental pollution.
+        </p>
+        <p>
+            Recycling paper is the best way to reduce waste and save natural resources.
+            It can be reused to make new paper products, reducing the need for fresh raw materials.
+            Proper disposal and recycling help lower pollution, save energy, and protect forests,
+            making it an eco-friendly choice.
+        </p>
+        <a href="{{ url_for('home') }}"><i class="fa-solid fa-arrow-left"></i> Back To Home Page</a>
+        </div>
+    </section>
+</body>
+
+</html>

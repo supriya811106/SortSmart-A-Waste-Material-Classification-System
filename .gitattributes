@@ -1,0 +1,2 @@
+model/garbage_classification_VGG16.h5 filter=lfs diff=lfs merge=lfs -text
+static/videos/video5.mp4 filter=lfs diff=lfs merge=lfs -text

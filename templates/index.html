@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classify Your Waste</title>
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://kit.fontawesome.com/2838106fa3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="navbar">
+        <span><img class="logo" src="../static/images/SortSmart.png" alt="Logo"></span>
+        <div class="hamburger-menu" onclick="toggleNavbar()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="navbar-links">
+            <a href="#">Home</a>
+            <a href="#materials">Waste Materials</a>
+            <a href="#prediction">Predict Waste</a>
+            <a href="#feedback">Feedback</a>
+        </div>
+    </div>
+
+    <!-- Main Section -->
+    <section class="main">
+        <!-- Videos or Slideshow -->
+        <video class="img-slide active" src="../static/videos/video4.mp4" autoplay muted loop></video>
+        <video class="img-slide" src="../static/videos/video2.mp4" autoplay muted loop></video>
+        <video class="img-slide" src="../static/videos/video3.mp4" autoplay muted loop></video>
+        <video class="img-slide" src="../static/videos/video5.mp4" autoplay muted loop></video>
+        <video class="img-slide" src="../static/videos/video1.mp4" autoplay muted loop></video>
+        <!-- More videos -->
+
+        <!-- Contents -->
+        <!-- Slide 1 Content -->
+        <div class="content active">
+            <h2>Understanding Waste Classification</h2>
+            <p>Discover the importance of sorting your waste correctly. Learn the basics of waste classification to help
+                reduce landfill and support recycling efforts.</p>
+        </div>
+
+        <!-- Slide 2 Content -->
+        <div class="content">
+            <h2>Types of Waste</h2>
+            <p>Explore the various types of waste: Biodegradable, Non-Biodegradable, Recyclable, and Hazardous. Know
+                what
+                belongs in your regular trash, recycling bin, and hazardous waste collection.</p>
+        </div>
+
+        <!-- Slide 3 Content -->
+        <div class="content">
+            <h2>Smart Recycling Tips</h2>
+            <p>Effective recycling starts at home. Learn how to clean and sort your recyclables to ensure they can be
+                processed correctly.</p>
+        </div>
+
+        <!-- Slide 4 Content -->
+        <div class="content">
+            <h2>Reduce Your Waste Footprint</h2>
+            <p>Simple everyday actions can significantly reduce waste. Find out how reducing, reusing, and composting
+                can
+                make a big difference.</p>
+        </div>
+
+        <!-- Slide 5 Content -->
+        <div class="content">
+            <h2>Predict Your Waste</h2>
+            <p>Use our innovative tool to predict the classification of your waste. Just upload an image of the waste
+                and
+                let our system guide you!</p>
+        </div>
+        <!-- ... more content sections ... -->
+
+        <div class="predict-btn">
+            <a href="#prediction" class="card-btn">Predict Your Waste</a>
+        </div>
+        <!-- Slider Navigation -->
+        <div class="slider-navigation">
+            <div class="nav-btn active"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+            <!-- More navigation buttons -->
+        </div>
+    </section>
+
+    <section id="materials" class="materials">
+        <h2>Types of Waste Materials</h2>
+        <section class="materials-container">
+            <div class="waste-item">
+                <img class="battery-img" src="../static/images/battery.png" height="400">
+                <hr>
+                <h3>Battery</h3>
+                <br>
+                <p>Batteries have harmful stuff inside. Throwing them away can hurt our environment. It's important to
+                    recycle
+                    them at special places to keep our world clean.</p>
+            </div>
+
+            <div class="waste-item">
+                <img class="cardboard-img" src="../static/images/cardboard.png" height="400">
+                <hr>
+                <h3>Cardboard</h3>
+                <br>
+                <p>Cardboard can be made into new things if we don't throw it away. When it ends up in big piles, it's
+                    bad
+                    for
+                    the Earth. So, remember to put it in the recycling bin.</p>
+            </div>
+
+            <div class="waste-item">
+                <img class="clothes-img" src="../static/images/clothes.png" height="400">
+                <hr>
+                <h3>Clothes</h3>
+                <br>
+                <p>Old clothes should go to charity or places that recycle them. It's not good
+                    because it makes air pollution. Let's help others and the Earth by giving away clothes.</p>
+            </div>
+
+            <div class="waste-item">
+                <img class="glass-img" src="../static/images/glass.png" height="400">
+                <hr>
+                <h3>Glass</h3>
+                <br>
+                <p>Glass can hurt animals and look bad in our neighborhoods if it's not recycled. We should recycle
+                    glass
+                    bottles and jars by putting them in the right bin.</p>
+            </div>
+
+            <div class="waste-item">
+                <img class="metal-img" src="../static/images/metal.png" height="400">
+                <hr>
+                <h3>Metal</h3>
+                <br>
+                <p>Metal stuff can be used again and again, but it's not good for the Earth if we throw it away. Let's
+                    recycle
+                    metal to save energy and keep our planet clean.</p>
+            </div>
+
+            <div class="waste-item">
+                <img class="organic-img" src="../static/images/organic.png" height="400">
+                <hr>
+                <h3>Organic</h3>
+                <br>
+                <p>Organic waste like food and plants can make a bad gas in landfills. Composting it is like magic for
+                    the
+                    Earth. It helps the soil and stops the bad gas.</p>
+            </div>
+
+            <div class="waste-item">
+                <img class="paper-img" src="../static/images/paper.png" height="400">
+                <hr>
+                <h3>Paper</h3>
+                <br>
+                <p>Paper can be turned into new things, but if it's not recycled, trees are cut down. We can help
+                    forests
+                    and
+                    keep our air clean by recycling paper.</p>
+            </div>
+
+            <div class="waste-item">
+                <img class="plastic-img" src="../static/images/plastic.png" height="400">
+                <hr>
+                <h3>Plastic</h3>
+                <br>
+                <p>Plastic things can stay in the environment for a very long time and hurt animals. Let's recycle
+                    plastic
+                    and
+                    make sure it's clean so we can protect our planet.</p>
+            </div>
+
+            <div class="waste-item">
+                <img class="shoes-img" src="../static/images/shoes.png" height="400">
+                <hr>
+                <h3>Shoes</h3>
+                <br>
+                <p>Don't throw away old shoes. If they are still good, give them to someone who needs them. If not, find
+                    a
+                    recycling place for shoes to keep them out of the trash.</p>
+            </div>
+
+            <div class="waste-item">
+                <img class="trash-img" src="../static/images/trash.png" height="400">
+                <hr>
+                <h3>Trash</h3>
+                <br>
+                <p>When we throw everything in the trash, it can cause problems for our world. Only put
+                    stuff in the trash when we can't do anything else with it.</p>
+            </div>
+
+        </section>
+
+    </section>
+
+    <section id="prediction">
+        <h2>Garbage Classification</h2>
+        <br>
+        <p>Upload an image to classify the waste material.</p>
+
+        <form id="upload-form">
+            <input type="file" id="imageUpload" accept="image/*" required>
+
+            <!-- Image Preview Section -->
+            <div id="image-preview-container">
+                <img id="image-preview" src="" alt="Uploaded Image">
+            </div>
+            <button type="submit">Predict Waste Material</button>
+        </form>
+    </section>
+
+    <section class="feedback-container">
+        <div id="feedback">
+            <h2 style="font-size: 1.6rem;">We Value Your Feedback</h2>
+            <form id="feedbackForm">
+                <label for="feedbackSelect">Did you find our insights useful?</label>
+                <select id="feedbackSelect">
+                    <option>Please choose an option</option>
+                    <option>Yes, very helpful</option>
+                    <option>Somewhat helpful</option>
+                    <option>Not helpful</option>
+                </select>
+
+                <label for="comments" style="display:none;">Kindly share any additional comments or
+                    suggestions...</label>
+                <textarea id="comments" style="display:none;"></textarea>
+
+                <button type="submit" id="submitBtn" style="display:none;">Submit Feedback</button>
+            </form>
+            <p class="success-message"></p>
+        </div>
+        <footer>© 2024 SortSmart. All rights reserved.</footer>
+    </section>
+
+    <script src="../static/js/script.js"></script>
+</body>
+
+</html>

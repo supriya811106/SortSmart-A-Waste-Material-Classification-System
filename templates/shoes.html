@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Waste Material</title>
+    <link rel="stylesheet" href="../static//css/style.css">
+    <script src="https://kit.fontawesome.com/2838106fa3.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        #output .image-grid img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        #output .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        a {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            font-size: 16px;
+            font-weight: bold;
+            box-shadow: 0 4px #2e7d32;
+        }
+
+        a:hover {
+            background-color: #66bb6a;
+            box-shadow: 0 2px #2e7d32;
+            transform: translateY(-2px);
+        }
+
+        a:active {
+            transform: translateY(1px);
+            box-shadow: 0 1px #2e7d32;
+        }
+
+        @keyframes pulseAnimation {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.05);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        a:focus {
+            animation: pulseAnimation 1s infinite;
+        }
+
+        @media (max-width: 600px) {
+            #output .image-grid {
+                grid-template-columns: 1fr;
+                /* One column on small screens */
+            }
+        }
+
+        /* Optional: Style for the font awesome icon */
+        .fa-arrow-left {
+            margin-right: 5px;
+            /* Space between icon and text */
+        }
+    </style>
+
+</head>
+
+<body>
+    <section id="output" class="output">
+        <h2>Your Waste Material is Shoes.</h2>
+        <div class="image-grid">
+            <img src="../static/images/shoes/shoes1.png" alt="">
+            <img src="../static/images/shoes/shoes2.png" alt="">
+            <img src="../static/images/shoes/shoes3.png" alt="">
+            <img src="../static/images/shoes/shoes4.png" alt="">
+        </div>
+
+        <p>
+            Shoe waste is a growing problem as millions of old or worn-out shoes end up in landfills every year.
+            Many shoes are made from synthetic materials like rubber and plastic, which take decades
+            to decompose and can release harmful chemicals into the environment.
+            Improper disposal of shoes contributes to waste buildup and pollution.
+        </p>
+        <p>
+            Recycling or donating old shoes is the best way to reduce waste.
+            Many organizations accept gently used shoes for reuse,
+            while damaged shoes can be recycled into materials for new products like
+            playground surfaces or insulation. Proper disposal helps reduce landfill waste,
+            conserve resources, and support sustainability.
+        </p>
+        <a href="{{ url_for('home') }}"><i class="fa-solid fa-arrow-left"></i> Back To Home Page</a>
+        </div>
+    </section>
+</body>
+
+</html>

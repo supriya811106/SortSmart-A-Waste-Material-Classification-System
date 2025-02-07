@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Waste Material</title>
+    <link rel="stylesheet" href="../static//css/style.css">
+    <script src="https://kit.fontawesome.com/2838106fa3.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        #output .image-grid img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        #output .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        a {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            font-size: 16px;
+            font-weight: bold;
+            box-shadow: 0 4px #2e7d32;
+        }
+
+        a:hover {
+            background-color: #66bb6a;
+            box-shadow: 0 2px #2e7d32;
+            transform: translateY(-2px);
+        }
+
+        a:active {
+            transform: translateY(1px);
+            box-shadow: 0 1px #2e7d32;
+        }
+
+        @keyframes pulseAnimation {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.05);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        a:focus {
+            animation: pulseAnimation 1s infinite;
+        }
+
+        @media (max-width: 600px) {
+            #output .image-grid {
+                grid-template-columns: 1fr;
+                /* One column on small screens */
+            }
+        }
+
+        /* Optional: Style for the font awesome icon */
+        .fa-arrow-left {
+            margin-right: 5px;
+            /* Space between icon and text */
+        }
+    </style>
+
+</head>
+
+<body>
+    <section id="output" class="output">
+        <h2>Your Waste Material is Metal.</h2>
+        <div class="image-grid">
+            <img src="../static/images/metal/metal1.png" alt="">
+            <img src="../static/images/metal/metal2.png" alt="">
+            <img src="../static/images/metal/metal3.png" alt="">
+            <img src="../static/images/metal/metal4.png" alt="">
+        </div>
+
+        <p>
+            Metal waste, such as aluminum cans, steel scraps, and old appliances,
+            does not break down naturally and can remain in the environment for centuries.
+            If not disposed of properly, metal waste can contribute to pollution, take up space in landfills,
+            and lead to the unnecessary mining of raw materials.
+            Some metals can also rust and release harmful substances into the soil and water.
+        </p>
+        <p>
+            Recycling metal is the best way to manage waste and conserve resources.
+            Metals can be melted down and reused multiple times without losing quality.
+            Proper recycling reduces landfill waste, saves energy,
+            and decreases the need for mining, helping to protect the environment and preserve natural resources.
+        </p>
+        <a href="{{ url_for('home') }}"><i class="fa-solid fa-arrow-left"></i> Back To Home Page</a>
+        </div>
+    </section>
+</body>
+
+</html>
