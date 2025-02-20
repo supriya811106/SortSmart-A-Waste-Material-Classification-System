@@ -1,6 +1,7 @@
 # SortSmart - A Waste Material Classification System
 
 ![SortSmart Logo](https://github.com/user-attachments/assets/ca513624-ea35-481c-b5cc-c5cfda71439d)
+[Live Demo](https://sortsmart-a-waste-material.onrender.com)
 
 ## Introduction
 SortSmart is a waste material classification system that uses a deep learning model to classify waste images into different categories. The project utilizes a Flask web application for real-time predictions.
@@ -69,7 +70,7 @@ python app.py
 The application will run on `http://127.0.0.1:5000/`
 
 ## How to Use
-1. Open the web application in your browser.
+1. Open the web application in your browser: [SortSmart Live](https://sortsmart-a-waste-material.onrender.com)
 2. Upload an image of waste material.
 3. Click on "Predict Waste Material" to classify the waste.
 4. The system will display the corresponding waste category with relevant details.
